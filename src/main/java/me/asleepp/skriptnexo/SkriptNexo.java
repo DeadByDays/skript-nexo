@@ -65,9 +65,6 @@ public class SkriptNexo extends JavaPlugin {
         instance = this;
         configuration = new SkriptNexoConfig(this);
 
-        int pluginId = 21274; // todo replace this with new bstats id
-        Metrics metrics = new Metrics(this, pluginId);
-
         addon = Skript.registerAddon(this);
         addon.setLanguageFileDirectory("lang");
         try {
